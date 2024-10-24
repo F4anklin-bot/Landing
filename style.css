@@ -42,7 +42,7 @@ nav{
     gap: 30px;
 }
 .link li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -52,7 +52,7 @@ nav{
 }
 
 .link li a:hover {
-    background-color: orange;
+    background-color: gray;
     transform: scale(1.1) translateY(-5px); /* Lien légèrement agrandi et déplacé vers le haut */
 }
 
@@ -67,13 +67,14 @@ nav{
     justify-content: center; /* Assure un alignement vertical au besoin */
 }
 .description h1{
-    color: red;
+    color:  white;
     text-align: center;
     margin: 0px 0px 20px 0px ;
 }
 .description p{
     text-align: center;
     margin: 0px 20px;
+    color:  whitesmoke;
 }
 .description-img{
     height: 300px;
@@ -87,7 +88,7 @@ nav{
     border-radius: 30px;
 }
 button {
-    background-color: orange;
+    background-color:   transparent;
     color: white;
     padding: 10px 20px;
     border-radius: 30px;
@@ -136,19 +137,22 @@ figcaption {
 }
 
 .texte {
-    background-image: url('quote.jpeg');
+    background-color: transparent;
     background-position: cover;
+    border-radius: 13px;
     position: relative;
     max-width: 70%;
     margin: 50px auto; /* Centrer l'élément si besoin */
+    padding: 5px;
 }
 .texte p {
-    font: 36px light italic;
+    font: 30px light italic;
     text-align: justify; /* Justification du texte */
     line-height: 1.6; /* Espace entre les lignes pour un meilleur rendu */
     margin-bottom: 4px; /* Pour donner de l'espace avant l'élément strong */
 }
 .texte strong {
+    margin-top: 5px;
     position: absolute;
     right: 0;
     font-weight: bold;
@@ -177,6 +181,3 @@ footer{
     text-align: center;
     background-color: gray;
 }
-
-
-

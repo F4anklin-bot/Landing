@@ -41,18 +41,21 @@ nav{
     display: flex;
     gap: 30px;
 }
-.link li a{
+.link li a {
     color: black;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     padding: 5px 8px;
     border-radius: 30px;
-    transition: 0.6s;
+    transition: background-color 0.6s ease, transform 0.3s ease; /* Ajout de transition sur transform */
 }
-.link li a:hover{
+
+.link li a:hover {
     background-color: orange;
+    transform: scale(1.1) translateY(-5px); /* Lien légèrement agrandi et déplacé vers le haut */
 }
+
 .hero{
     display: flex;
     justify-content: center;
@@ -83,7 +86,7 @@ nav{
     width: 100%;
     border-radius: 30px;
 }
-.description button {
+button {
     background-color: orange;
     color: white;
     padding: 10px 20px;
@@ -98,10 +101,11 @@ button:hover{
     background-color: #333;
 }
 .title{
+    margin: 50px;
+    text-decoration: underline;
     text-align: center;
 }
 .top-img {
-    margin-top: 50px;
     display: flex;
     justify-content: space-around;
 }
@@ -130,3 +134,40 @@ figcaption {
     font-size: 16px;
     color: #333;
 }
+
+.texte {
+    background-image: url('quote.jpeg');
+    background-position: cover;
+    position: relative;
+    max-width: 70%;
+    margin: 50px auto; /* Centrer l'élément si besoin */
+}
+.texte p {
+    font: 36px light italic;
+    text-align: justify; /* Justification du texte */
+    line-height: 1.6; /* Espace entre les lignes pour un meilleur rendu */
+    margin-bottom: 4px; /* Pour donner de l'espace avant l'élément strong */
+}
+.texte strong {
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+}
+.sign-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:cornflowerblue;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0px auto;
+}
+.signtext p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+.signbutton{
+    margin-left: 160%;
+}
+

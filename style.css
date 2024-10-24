@@ -93,3 +93,40 @@ nav{
     margin-top: 20px; /* Ajoute un espacement au-dessus du bouton */
     transition: 0.3s;
 }
+button:hover{
+    color: aqua;
+    background-color: #333;
+}
+.title{
+    text-align: center;
+}
+.top-img {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+figure {
+    text-align: center; /* Centrer le texte des captions */
+}
+
+.top-img figure img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+.top-img img:hover {
+    transform: scale(1.2);
+    border: 3px solid saddlebrown;
+    cursor: pointer;
+    /* Supprimer le changement de hauteur pour éviter les sauts */
+}
+
+figcaption {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}

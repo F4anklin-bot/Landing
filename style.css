@@ -5,7 +5,6 @@
 body{
     height: 100%;
     width: 100%;
-
 }
 header{
     background-color: rgb(33, 33, 49);
@@ -17,7 +16,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 .logo{
     border: 2px solid;
@@ -67,20 +65,19 @@ nav{
     justify-content: center; /* Assure un alignement vertical au besoin */
 }
 .description h1{
-    color:  white;
+    color: white;
     text-align: center;
     margin: 0px 0px 20px 0px ;
 }
 .description p{
     text-align: center;
     margin: 0px 20px;
-    color:  whitesmoke;
+    color: whitesmoke;
 }
 .description-img{
     height: 300px;
     width: 500px;
     margin: 10px 10px;
-
 }
 .description-img img{
     height: 100%;
@@ -88,7 +85,7 @@ nav{
     border-radius: 30px;
 }
 button {
-    background-color:   transparent;
+    background-color: transparent;
     color: white;
     padding: 10px 20px;
     border-radius: 30px;
@@ -180,4 +177,39 @@ figcaption {
 footer{
     text-align: center;
     background-color: gray;
+}
+
+/* === Media Queries pour Mobile === */
+@media (max-width: 768px) {
+    header {
+        height: 300px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .link ul {
+        flex-direction: column; /* Aligne les liens en colonne */
+        gap: 10px;
+    }
+
+    .description-img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .top-img {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sign-up {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .signbutton button {
+        width: 80%; /* Agrandir le bouton pour le rendre plus facile à cliquer */
+    }
 }
